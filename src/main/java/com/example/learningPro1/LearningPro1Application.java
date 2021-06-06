@@ -10,10 +10,7 @@ public class LearningPro1Application {
 
 	public static void main(String[] args) {
 		SpringApplication app = new SpringApplication(LearningPro1Application.class);
-        app.setDefaultProperties(Collections
-          .singletonMap("server.port", "9003"));
-        app.run(args);
-	//	SpringApplication.run(LearningPro1Application.class, args);
+		SpringApplication.run(LearningPro1Application.class, args);
 	}
 
 }
