@@ -23,7 +23,7 @@ public class LearingPro1Controller {
 	
 	@GetMapping("/backendCall1")
 	public ResponseEntity<StringResponse> BackendCall2() {
-		stringResponse.setResponse(new RestTemplate().getForObject("http://localhost:9004/backendCall2", String.class));
+		stringResponse.setResponse(new RestTemplate().getForObject("http://172.18.0.1:9004/backendCall2", String.class));
 		return new ResponseEntity<StringResponse>(stringResponse, HttpStatus.OK);
 	}
 
